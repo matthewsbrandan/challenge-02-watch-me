@@ -8,7 +8,7 @@ import './styles/global.scss';
 export function App() {
   return (
     <MovieContextProvider>
-      <div style={{ display: 'flex', flexDirection: 'row' }}>
+      <div id="master">
         <SideBar />
         <Content />
       </div>

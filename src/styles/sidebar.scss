@@ -24,6 +24,10 @@ nav.sidebar {
       display: inline;
       color: var(--white);
     }
+
+    .toggle-menu{
+      display: none;
+    }
   }
 
   .buttons-container {
@@ -31,5 +35,35 @@ nav.sidebar {
     flex-direction: column;
 
     width: 100%;
+  }
+}
+
+@media (max-width: 1320px){
+  nav.sidebar{
+    min-width: 100vw;
+    height: 8rem;
+
+    > span {
+      display: flex;
+      .toggle-menu{
+        margin-left: .8rem;
+        display: inline;
+      }
+    }
+
+    .buttons-container:not(.expanded){
+      display: none;
+    }
+    .buttons-container.expanded{
+      position: absolute;
+      
+      margin-top: 6rem;
+      padding-bottom: 2rem;
+      display: flex;
+      align-items: center;
+
+      z-index: 99999;
+      background: var(--background2);
+    }
   }
 }

@@ -38,3 +38,12 @@ input, textarea {
 button {
   cursor: pointer;
 }
+#master{
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 1320px){
+  #master{
+    flex-direction: column;
+  }
+}

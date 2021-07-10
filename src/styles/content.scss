@@ -37,3 +37,13 @@ main {
     list-style: none;
   }
 }
+
+@media (max-width: 950px){
+  .wrapper .container {
+    padding: 0 1rem 1rem;
+  }
+  main .movies-list {
+    display: flex;
+    overflow-x: auto;
+  }
+}
